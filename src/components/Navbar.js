@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import {FaBars, FaTimes} from 'react-icons/fa'
 import {MdFingerprint} from 'react-icons/md'
 import {Button} from './Button'
+import './Navbar.css'
 
 function Navbar() {
     const [click, setClick] = useState(false)
@@ -22,7 +23,7 @@ function Navbar() {
     return (
         <>
            <div className='navbar'> 
-           <div className='navbar-container' >
+           <div className='navbar-container container' >
                
                <Link to = '/'className= 'navbar-logo'>
                    <MdFingerprint className='navbar-icon'/>
@@ -30,7 +31,7 @@ function Navbar() {
                </Link>
                
                <div className= 'menu-icon' onClick={handleClick}>
-                 {click ? <FaBars/> : <FaTimes/>}
+                 {click ? <FaBars className='fa-bars'/> : <FaTimes className='.fa-times'/>}
                </div>
                <ul className={ click? 'nav-menu active': 'nav-menu'}>
                 <li className='nav-item'>

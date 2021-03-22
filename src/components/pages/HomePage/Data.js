@@ -1,5 +1,5 @@
 export const homeObjOne = {
-    lightBg:false,
+     lightBg:false,
      topLine:'excluive acces',
      lightText:true,
      lightTextDesc:true,

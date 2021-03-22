@@ -10,8 +10,7 @@ function ComponentdetsSection({
     return (
         <>
          <div className={lightBg ? 'home__comp-section': 'home__comp-section darkBg'}>
-             </div>  
-             
+               
              <div className='container'>
                 <div className="row home__comp-row" style={{display:'flex', flexDirection:imgStart==='start'? 'row-reverse':'row'}}>
                     <div className='col'>
@@ -32,6 +31,7 @@ function ComponentdetsSection({
                     </div>
                 </div>
              </div>
+             </div>  
         </>
     )
 }

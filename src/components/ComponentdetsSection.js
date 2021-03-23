@@ -23,7 +23,7 @@ function ComponentdetsSection({
                                     <Button buttonSize='btn--wide' buttonColor='blue'>{buttonLabel}</Button>
                                 </Link>
                         </div>
-                    </div>
+                    </div> 
                     <div className='col'>
                         <div className='home__comp-img-wrapper'>
                              <img src={img} alt={alt} className='home__comp-img'/>

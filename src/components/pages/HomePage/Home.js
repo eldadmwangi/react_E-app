@@ -1,5 +1,6 @@
 import React from 'react'
 import ComponentdetsSection from '../../ComponentdetsSection'
+import Pricing from '../../Pricing'
 import {homeObjOne,homeObjTwo,homeObjThree,homeObjFour} from './Data'
 
 function Home() {
@@ -9,6 +10,7 @@ function Home() {
             <ComponentdetsSection {...homeObjThree}/>
             <ComponentdetsSection {...homeObjTwo}/>
             <ComponentdetsSection {...homeObjFour}/>
+            <Pricing/>
         </>
     )
 }

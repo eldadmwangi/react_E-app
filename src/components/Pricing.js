@@ -40,7 +40,7 @@ function Pricing() {
                                 <h4>$5.00</h4>
                                 <p>Monthly</p>
                                 <ul className='pricing__container-features'>
-                                    <li>200 Transactions</li>
+                                    <li>500 Transactions</li>
                                     <li> 5% Cashback</li>
                                     <li> $50,000 Limit</li>
                                 </ul>

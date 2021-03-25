@@ -3,17 +3,17 @@ import './header.css'
 
 
 function ProductDisplay(props) {
-    const {product} =props;
+    const {product,addToCart} =props;
     return (
         <div>
            <img className='small' src={product.image} alt={product.name}/>
            <h3>{product.name}</h3>
            <div>${product.price}</div>
            <div>
-               <button>Add to cart</button>
+               <button onClick={()=>addToCart(product)} >Add to cart</button>
            </div>
         </div>
-    
+     
     )
 }
 

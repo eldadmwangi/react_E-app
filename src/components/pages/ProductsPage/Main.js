@@ -2,7 +2,6 @@ import React from 'react'
 import ProductDisplay from './ProductDisplay'
 
 
-
 function Main(props) {
     const {products,addToCart}= props;
     return (

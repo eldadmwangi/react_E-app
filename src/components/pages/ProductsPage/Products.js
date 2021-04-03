@@ -14,15 +14,25 @@ function Products() {
          )}
          else {
            setCartItems([...cartItems,{...product,quantity:1}])
-         }
-         
+         }  
+     }
+     const removeFromCart=(product)=>{
+       const productExist=cartItems.find((x)=>x.id===product.id);
+       if(productExist.quantity===1){
+         setCartItems(cartItems.filter((x)=>x.id !== product.id))
+       } 
+       else{
+         setCartItems(cartItems.map((x)=>
+         x.id===product.id ? {...productExist, quantity:productExist.quantity -1} :x
+         ))
+       }
      }
     return (
         <div>
           <Header/>  
           <div className='row'>
           <Main products={products} addToCart={addToCart} />
-          <Basket cartItems={cartItems} addToCart={addToCart}/>
+          <Basket cartItems={cartItems} addToCart={addToCart} removeFromCart={removeFromCart}/>
           </div>
         </div>
     )

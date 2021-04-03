@@ -16,5 +16,4 @@ function ProductDisplay(props) {
      
     )
 }
-
 export default ProductDisplay
